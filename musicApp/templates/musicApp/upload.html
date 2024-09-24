@@ -3,9 +3,10 @@
 
 {% block body %}
 
-<h2 style="text-align: center; padding-top: 2%; color: rgb(218, 16, 16);">Upload Your Music</h2>
+<h2 style="text-align: center; padding-top: 2%; color: black;">Upload Your Music</h2>
 
 <div class="container my-3">
+  <div class="col-lg-6" style="center">
     <form action="/musicApp/upload" enctype="multipart/form-data" method="POST">{% csrf_token %}
         <div class="form-group">
           <label for="exampleInputEmail1">Your Music Name</label>
@@ -47,9 +48,10 @@
           </div>
         
     <div style="padding-top: 3%; padding-bottom: 3%;">
-        <button type="submit" class="btn btn-primary">Upload...</button>
+        <button type="submit" class="btn btn-danger">Upload...</button>
     </div>
       </form>
+    </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
